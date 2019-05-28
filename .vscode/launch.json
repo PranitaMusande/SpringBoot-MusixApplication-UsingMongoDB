@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MusixServiceApplication",
+            "request": "launch",
+            "mainClass": "com.stackroute.musixservice.MusixServiceApplication",
+            "projectName": "musix-service"
+        }
+    ]
+}
