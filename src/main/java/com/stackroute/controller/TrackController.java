@@ -2,13 +2,10 @@ package com.stackroute.controller;
 
 
 import com.stackroute.exceptions.TrackAlreadyExistsException;
-import com.stackroute.exceptions.TrackGlobalExceptionHandling;
 import com.stackroute.exceptions.TrackNotFoundException;
 import com.stackroute.model.Track;
 import com.stackroute.service.TrackService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -107,21 +104,6 @@ public class TrackController
         return responseEntity;
     }
 
-//    @GetMapping("/track/{trackName}")
-//    public ResponseEntity<List<Track>> getTrackByName(@PathVariable("trackName") String track)
-//        {
-//            ResponseEntity responseEntity;
-//            try {
-//                List<Track> trackList = trackService.getTrackByName(track);
-//                return new ResponseEntity<List<Track>>(trackList, HttpStatus.OK);
-//            }
-//            catch (Exception ex)
-//            {
-//                responseEntity = new ResponseEntity<String>(ex.getMessage(), HttpStatus.CONFLICT);
-//                ex.getMessage();
-//            }
-//            return responseEntity;
-//        }
 
 
 
