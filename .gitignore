@@ -1,5 +1,6 @@
 HELP.md
 /target/
+/mvnw/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -10,6 +11,7 @@ HELP.md
 .settings
 .springBeans
 .sts4-cache
+.vscode
 
 ### IntelliJ IDEA ###
 .idea
@@ -25,5 +27,3 @@ HELP.md
 /.nb-gradle/
 /build/
 
-.vscode
-mvnw
