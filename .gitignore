@@ -26,4 +26,8 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 /build/
+.mvn/wrapper
+.vscode
+mvnw
+mvnw.cmd
 
