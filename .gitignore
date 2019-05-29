@@ -12,6 +12,8 @@ HELP.md
 .springBeans
 .sts4-cache
 .vscode
+.mvn/wrapper
+.vscode
 
 ### IntelliJ IDEA ###
 .idea
@@ -26,8 +28,5 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 /build/
-.mvn/wrapper
-.vscode
-mvnw
-mvnw.cmd
+
 
