@@ -27,6 +27,7 @@ public class TrackController
         this.trackService = trackService;
     }
 
+    //Add music
     @PostMapping("/music")
     public ResponseEntity<Track> addMusic(@RequestBody Track track)
     {
@@ -46,6 +47,7 @@ public class TrackController
         return  responseEntity;
     }
 
+    //Update Music
     @PutMapping("/music/{id}")
     public ResponseEntity<Track> updateMusic(@RequestBody Track track,@PathVariable int id)
     {
@@ -66,6 +68,7 @@ public class TrackController
         return responseEntity;
     }
 
+    //Get add musics
     @GetMapping("/music")
     public ResponseEntity<List<Track>> getAddMusic()
     {
@@ -85,7 +88,7 @@ public class TrackController
         return responseEntity;
     }
 
-
+    //Delete music
     @DeleteMapping("/music/{id}")
     public ResponseEntity<String> deleteMusic(@PathVariable int id) {
         ResponseEntity responseEntity = null;
