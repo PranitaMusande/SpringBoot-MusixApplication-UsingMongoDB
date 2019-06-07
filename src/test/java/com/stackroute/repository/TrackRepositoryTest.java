@@ -17,7 +17,6 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @DataMongoTest
-//@AutoConfigureTestDatabase(replace=AutoConfigureTestDatabase.Replace.NONE)
 public class TrackRepositoryTest
 {
     @Autowired

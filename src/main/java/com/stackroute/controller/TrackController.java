@@ -32,7 +32,7 @@ public class TrackController
     {
         ResponseEntity responseEntity = null;
         try {
-            return new ResponseEntity<>(trackService.addMusic(track), HttpStatus.OK);
+            return new ResponseEntity<>(trackService.addMusic(track), HttpStatus.CREATED);
         }
         catch (TrackAlreadyExistsException ex)
         {
@@ -52,7 +52,7 @@ public class TrackController
         ResponseEntity responseEntity = null;
         try{
         track.setTrackId(id);
-        return new ResponseEntity<>(trackService.addMusic(track), HttpStatus.OK);
+        return new ResponseEntity<>(trackService.addMusic(track), HttpStatus.CREATED);
          }
         catch (TrackAlreadyExistsException ex)
         {
@@ -91,8 +91,7 @@ public class TrackController
         ResponseEntity responseEntity = null;
         try {
             trackService.deleteMusic(id);
-            return new ResponseEntity<>("successs", HttpStatus.OK);
-            //return new ResponseEntity<Track>(trackService.deleteMusic(id), HttpStatus.OK);
+            return new ResponseEntity<>("successs", HttpStatus.GONE);
         } catch (TrackNotFoundException ex) {
             responseEntity = new ResponseEntity<String>(ex.getMessage(), HttpStatus.CONFLICT);
             ex.getMessage();
